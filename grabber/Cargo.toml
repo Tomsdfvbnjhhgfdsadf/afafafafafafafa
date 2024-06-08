@@ -1,0 +1,29 @@
+[package]
+name = "untitled7"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+anyhow = "1.0"
+futures = "0.3.24"
+ethers = { git = "https://github.com/gakonst/ethers-rs", rev = "0116130", features = ["rustls", "openssl", "abigen", "abigen-offline", "ws"] }
+hex = "0.4.3"
+lazy_static = "1.4.0"
+dotenvy = "0.15"
+async-trait = "0.1.60"
+serde = "1.0.152"
+indexmap = "1.9.1"
+serde_json = "1.0.91"
+again = "0.1"
+toml = "0.5.10"
+sea-orm = {version="0.10.6", features = ["sqlx-sqlite", "runtime-tokio-native-tls"]}
+async_once = "0.2.6"
+chrono = "0.4.23"
+reqwest = {version="0.11.13", features=["rustls-tls", "rustls-tls-native-roots", "cookies"]}
+proc-macro2 = "1.0.50"
+fastrand = "1.8.0"
+itertools = "0.10.5"
+rand = "0.8.5"
